@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendation System</title>
+</head>
+<body>
+    <h1>Recommendation System for Cleaning Robots</h1>
+    <form action="/recommend" method="post">
+        <label for="surface_type">Surface Type:</label>
+        <select name="surface_type" id="surface_type">
+            <option value="Carpet">Carpet</option>
+            <option value="Concrete">Concrete</option>
+            <option value="Tile">Tile</option>
+            <option value="Wood">Wood</option>
+        </select>
+        <br><br>
+        <label for="room_size">Room Size (in square meter):</label>
+        <input type="number" name="room_size" id="room_size" required><br><br>
+        <label for="dirtiness_level">Dirtiness Level (1 to 5):</label>
+        <select name="dirtiness_level" id="dirtiness_level">
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+        </select>
+        <br><br>
+        <button type="submit">Get Recommendation</button>
+    </form>
+</body>
+</html>
